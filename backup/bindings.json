@@ -1,0 +1,67 @@
+{
+  "note": "绑定清单（已脱敏）：secret 只保留名称，KV 只保留变量名",
+  "result": [
+    {
+      "name": "ADMIN_TOKEN",
+      "type": "secret_text"
+    },
+    {
+      "name": "GH_PAT",
+      "type": "secret_text"
+    },
+    {
+      "name": "GH_REF",
+      "text": "main",
+      "type": "plain_text"
+    },
+    {
+      "name": "GH_REPO",
+      "text": "<your-github-user>/<your-repo>",
+      "type": "plain_text"
+    },
+    {
+      "name": "GH_WORKFLOW",
+      "text": "workbuddy.yml",
+      "type": "plain_text"
+    },
+    {
+      "name": "KV",
+      "namespace_id": "<KV_NAMESPACE_ID>",
+      "type": "kv_namespace"
+    },
+    {
+      "name": "MASTER_KEY",
+      "type": "secret_text"
+    },
+    {
+      "name": "QODER_KV",
+      "namespace_id": "<QODER_KV_NAMESPACE_ID>",
+      "type": "kv_namespace"
+    },
+    {
+      "name": "QODER_MASTER_KEY",
+      "type": "secret_text"
+    },
+    {
+      "name": "TRAE_KV",
+      "namespace_id": "<TRAE_KV_NAMESPACE_ID>",
+      "type": "kv_namespace"
+    },
+    {
+      "name": "TRAE_MASTER_KEY",
+      "type": "secret_text"
+    },
+    {
+      "name": "WB_KV",
+      "namespace_id": "<WB_KV_NAMESPACE_ID>",
+      "type": "kv_namespace"
+    },
+    {
+      "name": "WB_MASTER_KEY",
+      "type": "secret_text"
+    }
+  ],
+  "success": true,
+  "errors": [],
+  "messages": []
+}

@@ -1,0 +1,13 @@
+# wrangler 本地状态
+.wrangler/
+.dev.vars
+
+# 接口返回的原始 multipart（含 source map，没意义）
+deployed.js
+*.map
+
+# 真实配置值，不进 git
+backup/REAL-VALUES.local.md
+
+# 打包产物
+dist/

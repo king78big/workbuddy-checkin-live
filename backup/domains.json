@@ -1,0 +1,17 @@
+{
+  "note": "脱敏示例：真实域名/zone/cert id 已移除。你自己的值看 Cloudflare 控制台 → Workers → Custom Domains",
+  "result": [
+    {
+      "id": "<custom_domain_id>",
+      "zone_id": "<zone_id>",
+      "zone_name": "<your-zone.example.com>",
+      "hostname": "<your-worker>.<your-zone>",
+      "service": "<your-worker-name>",
+      "environment": "production",
+      "cert_id": "<cert_id>",
+      "previews_enabled": false,
+      "enabled": true
+    }
+  ],
+  "success": true
+}

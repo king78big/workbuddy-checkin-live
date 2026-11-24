@@ -1,0 +1,23 @@
+# 换成你自己的 Worker 名
+name = "<your-worker-name>"
+main = "worker.js"
+compatibility_date = "2026-11-20"
+workers_dev = true
+
+# 只需要一个 KV 命名空间。三个平台的数据用 key 前缀隔离（trae: / wb: / qoder:）
+# 新建：wrangler kv namespace create KV   → 把返回的 id 填进来
+[[kv_namespaces]]
+binding = "KV"
+id = "<KV_NAMESPACE_ID>"
+
+[vars]
+GH_REF = "main"
+GH_REPO = "<your-github-user>/<your-repo>"
+GH_WORKFLOW = "workbuddy.yml"
+
+[triggers]
+crons = ["17 23 * * *", "17 4 * * *", "37 15 * * *"]
+
+# 注意：MASTER_KEY / ADMIN_TOKEN 是 Secret，不要写在这里（部署时不会被删）
+#   wrangler secret put MASTER_KEY
+#   wrangler secret put ADMIN_TOKEN
