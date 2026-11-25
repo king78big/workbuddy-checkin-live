@@ -16,7 +16,7 @@ GH_REPO = "<your-github-user>/<your-repo>"
 GH_WORKFLOW = "workbuddy.yml"
 
 [triggers]
-crons = ["17 23 * * *", "17 4 * * *", "37 15 * * *"]
+crons = ["17 23 * * *"]
 
 # 注意：MASTER_KEY / ADMIN_TOKEN 是 Secret，不要写在这里（部署时不会被删）
 #   wrangler secret put MASTER_KEY
